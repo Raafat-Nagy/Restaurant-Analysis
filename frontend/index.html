@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Restaurant Analysis</title>
+  <link rel="stylesheet" href="/static/style.css">
+  <link rel="icon" type="image/svg+xml" href="/static/favicon.svg">
+</head>
+<body>
+  <header class="topbar">
+    <div class="brand">
+      <span class="brand-mark" aria-hidden="true">
+        <img src="/static/favicon.svg" width="22" height="22" alt="">
+      </span>
+      <div class="brand-text">
+        <h1>Restaurant Analysis</h1>
+        <p>Seated-guest counting &amp; table occupancy</p>
+      </div>
+    </div>
+  </header>
+
+  <main class="page">
+    <section class="card">
+      <header class="card-head">
+        <h2>Processed video</h2>
+        <p class="card-meta">processed stream · detection and table overlays</p>
+      </header>
+      <div class="video-frame">
+        <img id="stream" alt="Processed video with detection and table overlays" decoding="async">
+        <div class="video-overlay" id="video-overlay">
+          <div class="spinner" aria-hidden="true"></div>
+          <p id="video-overlay-text">Connecting to the processed video…</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <script src="/static/app.js"></script>
+</body>
+</html>

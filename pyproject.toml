@@ -1,0 +1,17 @@
+[project]
+name = "restaurant-analysis"
+version = "0.1.0"
+description = "Restaurant table-occupancy analysis of recorded video: YOLO26 pose detection, seated-guest counting, occupancy sessions, and an MJPEG stream."
+requires-python = ">=3.12"
+dependencies = [
+    "fastapi>=0.151.0",
+    "numpy>=2.4.6",
+    "opencv-python>=5.0.0.93",
+    "pydantic-settings>=2.16.0",
+    "supervision>=0.31.0",
+    "ultralytics>=8.4.183",
+    "uvicorn>=0.54.0",
+]
+
+[tool.uv]
+package = false
